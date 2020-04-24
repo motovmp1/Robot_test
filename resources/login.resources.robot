@@ -15,6 +15,8 @@ Open my Browser
     maximize browser window
     sleep  4
     set selenium speed  1
+    ${page_title}       get title
+    log                 ${page_title}
 
 Closing Browsers
     close all browsers
