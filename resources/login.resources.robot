@@ -32,5 +32,15 @@ Input PWD
     [Arguments]     ${password}
     input text      id:Password     ${password}
 
-Click in login butto
+Click in login button
     click element   xpath://input[@class='button-1 login-button']
+
+Click in logout button
+    click link      Logout
+
+Error Message should be visible
+    page should contain     Login was unsuccessful.
+
+Dashboard page should be visible
+    page should contain     Dashboard
+
