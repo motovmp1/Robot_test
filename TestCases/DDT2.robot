@@ -2,9 +2,9 @@
 
 Library     Selenium2Library
 
-Resource    /home/elsys/PycharmProjects/robot_frame/resources/login.resources.robot
+Resource   ../resources/login.resources.robot
 
-Library     DataDriver   /home/elsys/PycharmProjects/robot_frame/Test_data/logindata.xlsx
+Library     DataDriver   ../Test_data/logindata.xlsx
 
 # Run only one test time every test
 Suite Setup      Open my Browser
@@ -12,6 +12,7 @@ Suite Teardown   Closing Browsers
 Test Template    Invalid login
 
 *** Test Cases ***
+
 
 Loginwithexcel using ${username} ${password}
 
