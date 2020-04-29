@@ -11,6 +11,7 @@ ${browser}      Chrome
 *** Keywords ***
 
 Open my Browser
+    log to console      "Running Test into Windows 10"
     open browser  ${URL}    ${browser}
     maximize browser window
     sleep  4

@@ -3,7 +3,7 @@
 Library    Selenium2Library
 
 # Resource will come from resources page
-Resource        /home/elsys/PycharmProjects/robot_frame/resources/login.resources.robot
+Resource        ../resources/login.resources.robot
 
 Suite Setup     Open my Browser
 Suite Teardown   Closing Browsers
