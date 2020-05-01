@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2 (Python 3.8.2 on win32)" generated="20200501 11:55:41.064" rpa="false">
+<robot generator="Robot 3.2 (Python 3.8.2 on win32)" generated="20200501 17:01:40.819" rpa="false">
 <suite id="s1" name="Inputbox" source="C:\Users\elsys\PycharmProjects\Robot_test\TestCases\inputbox.robot">
 <test id="s1-t1" name="OpenNavigator">
 <kw name="openbrowserpathapplication">
@@ -8,7 +8,7 @@
 <arguments>
 <arg>"Running Test into Windows 10"</arg>
 </arguments>
-<status status="PASS" starttime="20200501 11:55:41.238" endtime="20200501 11:55:41.239"></status>
+<status status="PASS" starttime="20200501 17:01:40.985" endtime="20200501 17:01:40.985"></status>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -16,64 +16,64 @@
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20200501 11:55:41.240" level="INFO">Opening browser 'headLessFirefox' to base url 'https://demo.nopcommerce.com'.</msg>
-<msg timestamp="20200501 11:55:41.242" level="INFO">Firefox driver log is always forced to to: C:\Users\elsys\PycharmProjects\Robot_test\TestCases\geckodriver-5.log</msg>
-<status status="PASS" starttime="20200501 11:55:41.239" endtime="20200501 11:55:49.248"></status>
+<msg timestamp="20200501 17:01:40.985" level="INFO">Opening browser 'headLessFirefox' to base url 'https://demo.nopcommerce.com'.</msg>
+<msg timestamp="20200501 17:01:40.986" level="INFO">Firefox driver log is always forced to to: C:\Users\elsys\PycharmProjects\Robot_test\TestCases\geckodriver-13.log</msg>
+<status status="PASS" starttime="20200501 17:01:40.985" endtime="20200501 17:01:48.409"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200501 11:55:49.248" endtime="20200501 11:55:49.252"></status>
+<status status="PASS" starttime="20200501 17:01:48.409" endtime="20200501 17:01:48.413"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20200501 11:55:50.255" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200501 11:55:49.252" endtime="20200501 11:55:50.255"></status>
+<msg timestamp="20200501 17:01:49.415" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200501 17:01:48.414" endtime="20200501 17:01:49.415"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>0.2</arg>
 </arguments>
-<status status="PASS" starttime="20200501 11:55:50.255" endtime="20200501 11:55:50.255"></status>
+<status status="PASS" starttime="20200501 17:01:49.415" endtime="20200501 17:01:49.415"></status>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <doc>Returns the title of the current page.</doc>
 <assign>
 <var>${page_title}</var>
 </assign>
-<msg timestamp="20200501 11:55:50.457" level="INFO">${page_title} = nopCommerce demo store</msg>
-<status status="PASS" starttime="20200501 11:55:50.255" endtime="20200501 11:55:50.457"></status>
+<msg timestamp="20200501 17:01:49.622" level="INFO">${page_title} = nopCommerce demo store</msg>
+<status status="PASS" starttime="20200501 17:01:49.416" endtime="20200501 17:01:49.622"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${page_title}</arg>
 </arguments>
-<msg timestamp="20200501 11:55:50.457" level="INFO">nopCommerce demo store</msg>
-<status status="PASS" starttime="20200501 11:55:50.457" endtime="20200501 11:55:50.457"></status>
+<msg timestamp="20200501 17:01:49.622" level="INFO">nopCommerce demo store</msg>
+<status status="PASS" starttime="20200501 17:01:49.622" endtime="20200501 17:01:49.622"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:55:41.237" endtime="20200501 11:55:50.457"></status>
+<status status="PASS" starttime="20200501 17:01:40.984" endtime="20200501 17:01:49.622"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>${url}</arg>
 </arguments>
-<msg timestamp="20200501 11:55:50.459" level="INFO">Opening url 'https://demo.nopcommerce.com'</msg>
-<status status="PASS" starttime="20200501 11:55:50.457" endtime="20200501 11:55:52.037"></status>
+<msg timestamp="20200501 17:01:49.623" level="INFO">Opening url 'https://demo.nopcommerce.com'</msg>
+<status status="PASS" starttime="20200501 17:01:49.622" endtime="20200501 17:01:51.125"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20200501 11:55:57.040" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20200501 11:55:52.039" endtime="20200501 11:55:57.040"></status>
+<msg timestamp="20200501 17:01:56.125" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200501 17:01:51.125" endtime="20200501 17:01:56.125"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:55:41.235" endtime="20200501 11:55:57.043" critical="yes"></status>
+<status status="PASS" starttime="20200501 17:01:40.984" endtime="20200501 17:01:56.125" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Compare the title">
 <kw name="titleofthepage">
@@ -82,20 +82,20 @@
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20200501 11:56:00.052" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20200501 11:55:57.048" endtime="20200501 11:56:00.052"></status>
+<msg timestamp="20200501 17:01:59.127" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200501 17:01:56.126" endtime="20200501 17:01:59.127"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>nopCommerce demo store</arg>
 </arguments>
-<msg timestamp="20200501 11:56:00.254" level="INFO">Page title is 'nopCommerce demo store'.</msg>
-<status status="PASS" starttime="20200501 11:56:00.052" endtime="20200501 11:56:00.254"></status>
+<msg timestamp="20200501 17:01:59.329" level="INFO">Page title is 'nopCommerce demo store'.</msg>
+<status status="PASS" starttime="20200501 17:01:59.127" endtime="20200501 17:01:59.329"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:55:57.048" endtime="20200501 11:56:00.254"></status>
+<status status="PASS" starttime="20200501 17:01:56.126" endtime="20200501 17:01:59.329"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:55:57.045" endtime="20200501 11:56:00.255" critical="yes"></status>
+<status status="PASS" starttime="20200501 17:01:56.125" endtime="20200501 17:01:59.329" critical="yes"></status>
 </test>
 <test id="s1-t3" name="Insert the email name">
 <kw name="Insertemailname">
@@ -104,8 +104,8 @@
 <arguments>
 <arg>xpath://a[@class='ico-login']</arg>
 </arguments>
-<msg timestamp="20200501 11:56:00.257" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
-<status status="PASS" starttime="20200501 11:56:00.257" endtime="20200501 11:56:02.340"></status>
+<msg timestamp="20200501 17:01:59.330" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20200501 17:01:59.330" endtime="20200501 17:02:01.040"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -115,23 +115,23 @@
 <assign>
 <var>${"email_txt"}</var>
 </assign>
-<msg timestamp="20200501 11:56:02.340" level="INFO">${"email_txt"} = id:Email</msg>
-<status status="PASS" starttime="20200501 11:56:02.340" endtime="20200501 11:56:02.340"></status>
+<msg timestamp="20200501 17:02:01.040" level="INFO">${"email_txt"} = id:Email</msg>
+<status status="PASS" starttime="20200501 17:02:01.040" endtime="20200501 17:02:01.040"></status>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
 <arguments>
 <arg>${"email_txt"}</arg>
 </arguments>
-<msg timestamp="20200501 11:56:02.778" level="INFO">Element 'id:Email' is displayed.</msg>
-<status status="PASS" starttime="20200501 11:56:02.340" endtime="20200501 11:56:02.778"></status>
+<msg timestamp="20200501 17:02:01.461" level="INFO">Element 'id:Email' is displayed.</msg>
+<status status="PASS" starttime="20200501 17:02:01.040" endtime="20200501 17:02:01.461"></status>
 </kw>
 <kw name="Element Should Be Enabled" library="SeleniumLibrary">
 <doc>Verifies that element identified by ``locator`` is enabled.</doc>
 <arguments>
 <arg>${"email_txt"}</arg>
 </arguments>
-<status status="PASS" starttime="20200501 11:56:02.778" endtime="20200501 11:56:03.399"></status>
+<status status="PASS" starttime="20200501 17:02:01.461" endtime="20200501 17:02:02.079"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -139,31 +139,31 @@
 <arg>${"email_txt"}</arg>
 <arg>vinicius.mpinho@gmail.com</arg>
 </arguments>
-<msg timestamp="20200501 11:56:03.401" level="INFO">Typing text 'vinicius.mpinho@gmail.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20200501 11:56:03.400" endtime="20200501 11:56:04.044"></status>
+<msg timestamp="20200501 17:02:02.080" level="INFO">Typing text 'vinicius.mpinho@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20200501 17:02:02.079" endtime="20200501 17:02:02.722"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20200501 11:56:05.046" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200501 11:56:04.044" endtime="20200501 11:56:05.046"></status>
+<msg timestamp="20200501 17:02:03.722" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200501 17:02:02.722" endtime="20200501 17:02:03.722"></status>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
 <arguments>
 <arg>${"email_txt"}</arg>
 </arguments>
-<status status="PASS" starttime="20200501 11:56:05.046" endtime="20200501 11:56:05.456"></status>
+<status status="PASS" starttime="20200501 17:02:03.722" endtime="20200501 17:02:04.132"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20200501 11:56:06.457" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200501 11:56:05.456" endtime="20200501 11:56:06.457"></status>
+<msg timestamp="20200501 17:02:05.133" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200501 17:02:04.133" endtime="20200501 17:02:05.133"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -171,12 +171,12 @@
 <arg>${"email_txt"}</arg>
 <arg>vinicius.mpinho@gmail.com</arg>
 </arguments>
-<msg timestamp="20200501 11:56:06.459" level="INFO">Typing text 'vinicius.mpinho@gmail.com' into text field 'id:Email'.</msg>
-<status status="PASS" starttime="20200501 11:56:06.458" endtime="20200501 11:56:07.123"></status>
+<msg timestamp="20200501 17:02:05.133" level="INFO">Typing text 'vinicius.mpinho@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20200501 17:02:05.133" endtime="20200501 17:02:05.770"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:56:00.257" endtime="20200501 11:56:07.124"></status>
+<status status="PASS" starttime="20200501 17:01:59.330" endtime="20200501 17:02:05.770"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:56:00.256" endtime="20200501 11:56:07.125" critical="yes"></status>
+<status status="PASS" starttime="20200501 17:01:59.329" endtime="20200501 17:02:05.770" critical="yes"></status>
 </test>
 <test id="s1-t4" name="Insert the password field">
 <kw name="insertpasswordfiel">
@@ -186,30 +186,30 @@
 <arg>id:Password</arg>
 <arg>Test@123</arg>
 </arguments>
-<msg timestamp="20200501 11:56:07.135" level="INFO">Typing password into text field 'id:Password'.</msg>
-<msg timestamp="20200501 11:56:07.556" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20200501 11:56:07.799" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20200501 11:56:07.134" endtime="20200501 11:56:07.799"></status>
+<msg timestamp="20200501 17:02:05.771" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20200501 17:02:06.177" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200501 17:02:06.392" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200501 17:02:05.771" endtime="20200501 17:02:06.393"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath://input[@class='button-1 login-button']</arg>
 </arguments>
-<msg timestamp="20200501 11:56:07.799" level="INFO">Clicking element 'xpath://input[@class='button-1 login-button']'.</msg>
-<status status="PASS" starttime="20200501 11:56:07.799" endtime="20200501 11:56:09.588"></status>
+<msg timestamp="20200501 17:02:06.393" level="INFO">Clicking element 'xpath://input[@class='button-1 login-button']'.</msg>
+<status status="PASS" starttime="20200501 17:02:06.393" endtime="20200501 17:02:07.739"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20200501 11:56:10.588" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200501 11:56:09.588" endtime="20200501 11:56:10.588"></status>
+<msg timestamp="20200501 17:02:08.741" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200501 17:02:07.739" endtime="20200501 17:02:08.741"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:56:07.132" endtime="20200501 11:56:10.588"></status>
+<status status="PASS" starttime="20200501 17:02:05.771" endtime="20200501 17:02:08.742"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:56:07.130" endtime="20200501 11:56:10.588" critical="yes"></status>
+<status status="PASS" starttime="20200501 17:02:05.770" endtime="20200501 17:02:08.742" critical="yes"></status>
 </test>
 <test id="s1-t5" name="Click login button page">
 <kw name="clickloginbutton">
@@ -218,33 +218,33 @@
 <arguments>
 <arg>xpath://a[@class='ico-account']</arg>
 </arguments>
-<msg timestamp="20200501 11:56:10.591" level="INFO">Clicking link 'xpath://a[@class='ico-account']'.</msg>
-<status status="PASS" starttime="20200501 11:56:10.591" endtime="20200501 11:56:11.711"></status>
+<msg timestamp="20200501 17:02:08.745" level="INFO">Clicking link 'xpath://a[@class='ico-account']'.</msg>
+<status status="PASS" starttime="20200501 17:02:08.745" endtime="20200501 17:02:10.642"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20200501 11:56:12.713" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20200501 11:56:11.711" endtime="20200501 11:56:12.713"></status>
+<msg timestamp="20200501 17:02:11.644" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200501 17:02:10.642" endtime="20200501 17:02:11.644"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:56:10.590" endtime="20200501 11:56:12.713"></status>
+<status status="PASS" starttime="20200501 17:02:08.745" endtime="20200501 17:02:11.644"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:56:10.590" endtime="20200501 11:56:12.713" critical="yes"></status>
+<status status="PASS" starttime="20200501 17:02:08.744" endtime="20200501 17:02:11.644" critical="yes"></status>
 </test>
 <test id="s1-t6" name="Close navigator page">
 <kw name="closenavigator">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200501 11:56:12.716" endtime="20200501 11:56:13.629"></status>
+<status status="PASS" starttime="20200501 17:02:11.645" endtime="20200501 17:02:12.449"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:56:12.716" endtime="20200501 11:56:13.629"></status>
+<status status="PASS" starttime="20200501 17:02:11.645" endtime="20200501 17:02:12.449"></status>
 </kw>
-<status status="PASS" starttime="20200501 11:56:12.715" endtime="20200501 11:56:13.631" critical="yes"></status>
+<status status="PASS" starttime="20200501 17:02:11.645" endtime="20200501 17:02:12.450" critical="yes"></status>
 </test>
 <doc>Open a Web Page using Lenovo new</doc>
-<status status="PASS" starttime="20200501 11:55:41.066" endtime="20200501 11:56:13.631"></status>
+<status status="PASS" starttime="20200501 17:01:40.820" endtime="20200501 17:02:12.453"></status>
 </suite>
 <statistics>
 <total>

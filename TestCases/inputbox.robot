@@ -78,3 +78,4 @@ clickloginbutton
 
 closenavigator
     close browser
+# DEVE RODAR SOZINHO APOS GIT
