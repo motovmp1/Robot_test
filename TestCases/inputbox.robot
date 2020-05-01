@@ -11,18 +11,30 @@ Library     SeleniumLibrary
 
 
 ${URL}      https://demo.nopcommerce.com
-${browser}      Chrome
+${browser}      headLessFirefox
 
 *** Test Cases ***
 
 
-LoginTest
-
+OpenNavigator
     openbrowserpathapplication
     Go To    ${url}
     sleep  5s
-    userandpasswordapplication
 
+Compare the title
+    titleofthepage
+
+Insert the email name
+    insertemailname
+
+Insert the password field
+    insertpasswordfiel
+
+Click login button page
+    clickloginbutton
+
+Close navigator page
+    closenavigator
 
 
 
@@ -32,27 +44,37 @@ openbrowserpathapplication
     log to console      "Running Test into Windows 10"
     open browser  ${URL}    ${browser}
     maximize browser window
-    sleep  4
-    set selenium speed  1
+    sleep  1
+    set selenium speed  0.2
     ${page_title}       get title
     log                 ${page_title}
 
 
-userandpasswordapplication
+titleofthepage
     sleep  3s
     title should be    nopCommerce demo store
+
+
+Insertemailname
     click link  xpath://a[@class='ico-login']
     ${"email_txt"}  set variable  id:Email
     element should be visible  ${"email_txt"}
     element should be enabled  ${"email_txt"}
     input text  ${"email_txt"}    vinicius.mpinho@gmail.com
-    sleep  3s
+    sleep  1s
     clear element text  ${"email_txt"}
-    sleep  3s
+    sleep  1s
     input text   ${"email_txt"}    vinicius.mpinho@gmail.com
+
+insertpasswordfiel
     input password  id:Password     Test@123
     click element  xpath://input[@class='button-1 login-button']
-    sleep  3s
+    sleep  1s
+
+
+clickloginbutton
     click link  xpath://a[@class='ico-account']
-    sleep   3s
+    sleep   1s
+
+closenavigator
     close browser
