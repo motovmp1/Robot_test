@@ -10,8 +10,8 @@ Library     SeleniumLibrary
 *** Variables ***
 
 
-${url}  https://demo.nopcommerce.com/
-${browser}  firefox
+${URL}      https://demo.nopcommerce.com
+${browser}      Chrome
 
 *** Test Cases ***
 
@@ -29,10 +29,14 @@ LoginTest
 *** Keywords ***
 
 openbrowserpathapplication
-    ${ff default caps}    Evaluate    sys.modules['selenium.webdriver'].common.desired_capabilities.DesiredCapabilities.FIREFOX    sys,selenium.webdriver
-    Set To Dictionary    ${ff default caps}    marionette=${True}
-    Create Webdriver    Firefox    executable_path=/home/elsys/PycharmProjects/robot_frame/TestCases/geckodriver
+    log to console      "Running Test into Windows 10"
+    open browser  ${URL}    ${browser}
     maximize browser window
+    sleep  4
+    set selenium speed  1
+    ${page_title}       get title
+    log                 ${page_title}
+
 
 userandpasswordapplication
     sleep  3s
